@@ -1,0 +1,265 @@
+\doxysection{Класс code}
+\hypertarget{classcode}{}\label{classcode}\index{code@{code}}
+
+
+Класс для шифрования методом маршрутной перестановки  
+
+
+
+
+{\ttfamily \#include $<$route.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcode_a40cf3e7a6c5d64a6c25a3aedfcfc5530}{code}} ()=delete
+\begin{DoxyCompactList}\small\item\em Удаленный конструктор по умолчанию \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcode_afa56d1b000ff0b23c8ca53a7413588c1}{code}} (int skey, string text)
+\begin{DoxyCompactList}\small\item\em Конструктор с ключом и текстом \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classcode_ae428dcf5a39dd96f237e20473706e978}{encryption}} (const string \&text)
+\begin{DoxyCompactList}\small\item\em Шифрование текста \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classcode_a88ec4986ee0d28b682478195d2c16989}{transcript}} (const string \&text, const string \&open\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Дешифрование текста \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcode_a65eb1c9f7e1b0659e01ac99d751bf50e}{get\+Valid\+Key}} (int \mbox{\hyperlink{classcode_ae524e38b36f167fbf173bc431ea5130c}{key}}, const string \&Text)
+\begin{DoxyCompactList}\small\item\em Проверка валидности ключа \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classcode_afba5460dd56f98f12db9a86a0dc701f5}{get\+Valid\+Open\+Text}} (const string \&s)
+\begin{DoxyCompactList}\small\item\em Проверка валидности открытого текста \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classcode_ad26ef77ac4a3741ef2149191d5da5fe4}{get\+Valid\+Cipher\+Text}} (const string \&s, const string \&open\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Проверка валидности зашифрованного текста \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcode_ae524e38b36f167fbf173bc431ea5130c}{key}}
+\begin{DoxyCompactList}\small\item\em Ключ шифрования (количество столбцов) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для шифрования методом маршрутной перестановки 
+
+Шифрование происходит путем записи текста в таблицу по строкам и чтения по столбцам в обратном порядке 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{classcode_a40cf3e7a6c5d64a6c25a3aedfcfc5530}\label{classcode_a40cf3e7a6c5d64a6c25a3aedfcfc5530} 
+\index{code@{code}!code@{code}}
+\index{code@{code}!code@{code}}
+\doxysubsubsection{\texorpdfstring{code()}{code()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily code\+::code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Удаленный конструктор по умолчанию 
+
+\Hypertarget{classcode_afa56d1b000ff0b23c8ca53a7413588c1}\label{classcode_afa56d1b000ff0b23c8ca53a7413588c1} 
+\index{code@{code}!code@{code}}
+\index{code@{code}!code@{code}}
+\doxysubsubsection{\texorpdfstring{code()}{code()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily code\+::code (\begin{DoxyParamCaption}\item[{int}]{skey,  }\item[{string}]{text }\end{DoxyParamCaption})}
+
+
+
+Конструктор с ключом и текстом 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em skey} & Ключ шифрования \\
+\hline
+\mbox{\texttt{ in}}  & {\em text} & Текст для инициализации\\
+\hline
+\mbox{\texttt{ in}}  & {\em skey} & Ключ шифрования \\
+\hline
+\mbox{\texttt{ in}}  & {\em text} & Текст для инициализации\\
+\hline
+\end{DoxyParams}
+Проверяет валидность ключа относительно длины текста 
+
+\doxysubsection{Методы}
+\Hypertarget{classcode_ae428dcf5a39dd96f237e20473706e978}\label{classcode_ae428dcf5a39dd96f237e20473706e978} 
+\index{code@{code}!encryption@{encryption}}
+\index{encryption@{encryption}!code@{code}}
+\doxysubsubsection{\texorpdfstring{encryption()}{encryption()}}
+{\footnotesize\ttfamily string code\+::encryption (\begin{DoxyParamCaption}\item[{const string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Шифрование текста 
+
+Шифрование текста методом маршрутной перестановки
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em text} & Текст для шифрования \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованный текст
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em text} & Текст для шифрования \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованный текст
+\end{DoxyReturn}
+Алгоритм\+:
+\begin{DoxyEnumerate}
+\item Запись текста в таблицу по строкам
+\item Чтение таблицы по столбцам справа налево 
+\end{DoxyEnumerate}\Hypertarget{classcode_ad26ef77ac4a3741ef2149191d5da5fe4}\label{classcode_ad26ef77ac4a3741ef2149191d5da5fe4} 
+\index{code@{code}!getValidCipherText@{getValidCipherText}}
+\index{getValidCipherText@{getValidCipherText}!code@{code}}
+\doxysubsubsection{\texorpdfstring{getValidCipherText()}{getValidCipherText()}}
+{\footnotesize\ttfamily string code\+::get\+Valid\+Cipher\+Text (\begin{DoxyParamCaption}\item[{const string \&}]{s,  }\item[{const string \&}]{open\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Проверка валидности зашифрованного текста 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em s} & Зашифрованный текст \\
+\hline
+\mbox{\texttt{ in}}  & {\em open\+\_\+text} & Исходный открытый текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Валидированный зашифрованный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classcipher__error}{cipher\+\_\+error}} & при несоответствии длин \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classcode_a65eb1c9f7e1b0659e01ac99d751bf50e}\label{classcode_a65eb1c9f7e1b0659e01ac99d751bf50e} 
+\index{code@{code}!getValidKey@{getValidKey}}
+\index{getValidKey@{getValidKey}!code@{code}}
+\doxysubsubsection{\texorpdfstring{getValidKey()}{getValidKey()}}
+{\footnotesize\ttfamily int code\+::get\+Valid\+Key (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{const string \&}]{Text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Проверка валидности ключа 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em key} & Ключ для проверки \\
+\hline
+\mbox{\texttt{ in}}  & {\em Text} & Текст для шифрования \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Валидный ключ 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classcipher__error}{cipher\+\_\+error}} & при невалидном ключе\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em key} & Ключ для проверки \\
+\hline
+\mbox{\texttt{ in}}  & {\em Text} & Текст для шифрования \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Валидный ключ 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classcipher__error}{cipher\+\_\+error}} & если ключ меньше 2 или больше длины текста \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classcode_afba5460dd56f98f12db9a86a0dc701f5}\label{classcode_afba5460dd56f98f12db9a86a0dc701f5} 
+\index{code@{code}!getValidOpenText@{getValidOpenText}}
+\index{getValidOpenText@{getValidOpenText}!code@{code}}
+\doxysubsubsection{\texorpdfstring{getValidOpenText()}{getValidOpenText()}}
+{\footnotesize\ttfamily string code\+::get\+Valid\+Open\+Text (\begin{DoxyParamCaption}\item[{const string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Проверка валидности открытого текста 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em s} & Текст для проверки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Валидированный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classcipher__error}{cipher\+\_\+error}} & при невалидном тексте\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em s} & Текст для проверки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Валидированный текст (без пробелов, только буквы) 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classcipher__error}{cipher\+\_\+error}} & при пустом тексте или недопустимых символах \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classcode_a88ec4986ee0d28b682478195d2c16989}\label{classcode_a88ec4986ee0d28b682478195d2c16989} 
+\index{code@{code}!transcript@{transcript}}
+\index{transcript@{transcript}!code@{code}}
+\doxysubsubsection{\texorpdfstring{transcript()}{transcript()}}
+{\footnotesize\ttfamily string code\+::transcript (\begin{DoxyParamCaption}\item[{const string \&}]{text,  }\item[{const string \&}]{open\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Дешифрование текста 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em text} & Зашифрованный текст \\
+\hline
+\mbox{\texttt{ in}}  & {\em open\+\_\+text} & Исходный открытый текст (для проверки длины) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованный текст
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em text} & Зашифрованный текст \\
+\hline
+\mbox{\texttt{ in}}  & {\em open\+\_\+text} & Исходный открытый текст (для проверки длины) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classcipher__error}{cipher\+\_\+error}} & при несоответствии длин или невалидных символах \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Данные класса}
+\Hypertarget{classcode_ae524e38b36f167fbf173bc431ea5130c}\label{classcode_ae524e38b36f167fbf173bc431ea5130c} 
+\index{code@{code}!key@{key}}
+\index{key@{key}!code@{code}}
+\doxysubsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily int code\+::key\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ключ шифрования (количество столбцов) 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+2/\mbox{\hyperlink{route_8h}{route.\+h}}\item 
+2/\mbox{\hyperlink{route_8cpp}{route.\+cpp}}\end{DoxyCompactItemize}

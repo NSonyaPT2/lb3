@@ -1,0 +1,189 @@
+\doxysection{Файл 1/main.cpp}
+\hypertarget{1_2main_8cpp}{}\label{1_2main_8cpp}\index{1/main.cpp@{1/main.cpp}}
+
+
+Тесты для класса \doxylink{classmodAlphaCipher}{mod\+Alpha\+Cipher}.  
+
+
+{\ttfamily \#include $<$Unit\+Test++/\+Unit\+Test++.\+h$>$}\newline
+{\ttfamily \#include "{}mod\+Alpha\+Cipher.\+h"{}}\newline
+Граф включаемых заголовочных файлов для main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{1_2main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSimpleFixture}{Simple\+Fixture}}
+\begin{DoxyCompactList}\small\item\em Фикстура для тестов с предустановленным шифром \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{1_2main_8cpp_a10d055a475413a0256547b41abbf970d}{SUITE}} (Key\+Test)
+\begin{DoxyCompactList}\small\item\em Тесты для проверки ключа шифрования \end{DoxyCompactList}\item 
+\mbox{\hyperlink{1_2main_8cpp_a965686b3dd5f389de483a13d946c7e98}{SUITE}} (Encrypt\+Test)
+\begin{DoxyCompactList}\small\item\em Тесты для шифрования \end{DoxyCompactList}\item 
+\mbox{\hyperlink{1_2main_8cpp_a5e94e37c8411fe2be8c274d87df13db4}{SUITE}} (Decrypt\+Test)
+\begin{DoxyCompactList}\small\item\em Тесты для дешифрования \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{1_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
+\begin{DoxyCompactList}\small\item\em Главная функция для запуска тестов \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Тесты для класса \doxylink{classmodAlphaCipher}{mod\+Alpha\+Cipher}. 
+
+\begin{DoxyAuthor}{Автор}
+Назарова Софья 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Дата}
+2025 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Авторство}
+WECT ПГУ 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Функции}
+\Hypertarget{1_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{1_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv }\end{DoxyParamCaption})}
+
+
+
+Главная функция для запуска тестов 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em argc} & Количество аргументов командной строки \\
+\hline
+\mbox{\texttt{ in}}  & {\em argv} & Аргументы командной строки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Код завершения (0 -\/ все тесты прошли успешно) 
+\end{DoxyReturn}
+\Hypertarget{1_2main_8cpp_a5e94e37c8411fe2be8c274d87df13db4}\label{1_2main_8cpp_a5e94e37c8411fe2be8c274d87df13db4} 
+\index{main.cpp@{main.cpp}!SUITE@{SUITE}}
+\index{SUITE@{SUITE}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{SUITE()}{SUITE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily SUITE (\begin{DoxyParamCaption}\item[{Decrypt\+Test}]{ }\end{DoxyParamCaption})}
+
+
+
+Тесты для дешифрования 
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000018}{Тест}}]Suite Decrypt\+Test \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000019}{Тест}}]Basic\+Decrypt \end{DoxyRefDesc}
+Базовое дешифрование
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000020}{Тест}}]Low\+Case\+Decrypt \end{DoxyRefDesc}
+Дешифрование текста в нижнем регистре (ожидается исключение)
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000021}{Тест}}]Whitespace\+Decrypt \end{DoxyRefDesc}
+Дешифрование текста с пробелами (ожидается исключение)
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000022}{Тест}}]Digits\+Decrypt \end{DoxyRefDesc}
+Дешифрование текста с цифрами (ожидается исключение)
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000023}{Тест}}]Punct\+Decrypt \end{DoxyRefDesc}
+Дешифрование текста со знаками препинания (ожидается исключение)
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000024}{Тест}}]Empty\+Decrypt \end{DoxyRefDesc}
+Дешифрование пустой строки (ожидается исключение)
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000025}{Тест}}]Max\+Shift\+Decrypt \end{DoxyRefDesc}
+Дешифрование с максимальным сдвигом\Hypertarget{1_2main_8cpp_a965686b3dd5f389de483a13d946c7e98}\label{1_2main_8cpp_a965686b3dd5f389de483a13d946c7e98} 
+\index{main.cpp@{main.cpp}!SUITE@{SUITE}}
+\index{SUITE@{SUITE}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{SUITE()}{SUITE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily SUITE (\begin{DoxyParamCaption}\item[{Encrypt\+Test}]{ }\end{DoxyParamCaption})}
+
+
+
+Тесты для шифрования 
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000010}{Тест}}]Suite Encrypt\+Test \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000011}{Тест}}]Basic\+Encrypt \end{DoxyRefDesc}
+Базовое шифрование
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000012}{Тест}}]Low\+Case\+Encrypt \end{DoxyRefDesc}
+Шифрование текста в нижнем регистре
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000013}{Тест}}]Text\+With\+Spaces \end{DoxyRefDesc}
+Шифрование текста с пробелами
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000014}{Тест}}]Text\+With\+Numbers \end{DoxyRefDesc}
+Шифрование текста с цифрами
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000015}{Тест}}]Empty\+String \end{DoxyRefDesc}
+Шифрование пустой строки (ожидается исключение)
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000016}{Тест}}]No\+Alpha\+String \end{DoxyRefDesc}
+Шифрование строки без букв (ожидается исключение)
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000017}{Тест}}]Max\+Shift\+Key \end{DoxyRefDesc}
+Шифрование с максимальным сдвигом (ключ "{}Я"{})\Hypertarget{1_2main_8cpp_a10d055a475413a0256547b41abbf970d}\label{1_2main_8cpp_a10d055a475413a0256547b41abbf970d} 
+\index{main.cpp@{main.cpp}!SUITE@{SUITE}}
+\index{SUITE@{SUITE}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{SUITE()}{SUITE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily SUITE (\begin{DoxyParamCaption}\item[{Key\+Test}]{ }\end{DoxyParamCaption})}
+
+
+
+Тесты для проверки ключа шифрования 
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000001}{Тест}}]Suite Key\+Test \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000002}{Тест}}]Valid\+Key \end{DoxyRefDesc}
+Проверка создания шифра с валидным ключом
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000003}{Тест}}]Long\+Key \end{DoxyRefDesc}
+Проверка длинного ключа
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000004}{Тест}}]Low\+Case\+Key \end{DoxyRefDesc}
+Проверка ключа в нижнем регистре
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000005}{Тест}}]Digits\+In\+Key \end{DoxyRefDesc}
+Проверка ключа с цифрами (ожидается исключение)
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000006}{Тест}}]Punctuation\+In\+Key \end{DoxyRefDesc}
+Проверка ключа со знаками препинания (ожидается исключение)
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000007}{Тест}}]Whitespace\+In\+Key \end{DoxyRefDesc}
+Проверка ключа с пробелами (ожидается исключение)
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000008}{Тест}}]Empty\+Key \end{DoxyRefDesc}
+Проверка пустого ключа (ожидается исключение)
+
+\begin{DoxyRefDesc}{Тест}
+\item[\mbox{\hyperlink{test__test000009}{Тест}}]Weak\+Key \end{DoxyRefDesc}
+Проверка слабого ключа (все символы одинаковые, ожидается исключение)

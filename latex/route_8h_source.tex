@@ -1,0 +1,42 @@
+\doxysection{route.\+h}
+\hypertarget{route_8h_source}{}\label{route_8h_source}\index{2/route.h@{2/route.h}}
+\mbox{\hyperlink{route_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcipher__error}{cipher\_error}}:\ \textcolor{keyword}{public}\ invalid\_argument\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classcipher__error_a9ba2f81af463a8ff742881d6bfcbd93f}{cipher\_error}}\ (\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ what\_arg):}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ invalid\_argument(what\_arg)\ \{\}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classcipher__error_a18cf27d9c2cd2538d3cb8f17e9a55f3e}{cipher\_error}}\ (\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ what\_arg):}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ invalid\_argument(what\_arg)\ \{\}}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcode}{code}}\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classcode_ae524e38b36f167fbf173bc431ea5130c}{key}};\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classcode_a65eb1c9f7e1b0659e01ac99d751bf50e}{getValidKey}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classcode_ae524e38b36f167fbf173bc431ea5130c}{key}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ Text);}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classcode_afba5460dd56f98f12db9a86a0dc701f5}{getValidOpenText}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ s);}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classcode_ad26ef77ac4a3741ef2149191d5da5fe4}{getValidCipherText}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ s,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ open\_text);}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcode_a40cf3e7a6c5d64a6c25a3aedfcfc5530}{code}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcode_a40cf3e7a6c5d64a6c25a3aedfcfc5530}{code}}(\textcolor{keywordtype}{int}\ skey,\ \textcolor{keywordtype}{string}\ text);}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classcode_ae428dcf5a39dd96f237e20473706e978}{encryption}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ text);}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classcode_a88ec4986ee0d28b682478195d2c16989}{transcript}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ text,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ open\_text);}
+\DoxyCodeLine{00099\ \};}
+
+\end{DoxyCode}
