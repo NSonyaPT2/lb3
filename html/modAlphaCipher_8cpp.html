@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Файл 1/modAlphaCipher.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_24a595075edeb848a5a5530b716a317e.html">1</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle"><div class="title">Файл modAlphaCipher.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Реализация класса <a class="el" href="classmodAlphaCipher.html" title="Класс для шифрования методом модифицированного алфавитного шифра">modAlphaCipher</a>.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="modAlphaCipher_8h_source.html">modAlphaCipher.h</a>&quot;</code><br />
+<code>#include &lt;locale&gt;</code><br />
+<code>#include &lt;codecvt&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для modAlphaCipher.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="modAlphaCipher_8cpp__incl.png" border="0" usemap="#a1_2modAlphaCipher_8cpp" alt=""/></div>
+<map name="a1_2modAlphaCipher_8cpp" id="a1_2modAlphaCipher_8cpp">
+<area shape="rect" title="Реализация класса modAlphaCipher." alt="" coords="345,5,513,31"/>
+<area shape="rect" href="modAlphaCipher_8h.html" title=" " alt="" coords="225,79,367,104"/>
+<area shape="poly" title=" " alt="" coords="409,33,331,74,329,70,407,28"/>
+<area shape="rect" title=" " alt="" coords="361,152,423,177"/>
+<area shape="poly" title=" " alt="" coords="429,32,401,139,396,138,424,30"/>
+<area shape="rect" title=" " alt="" coords="447,152,521,177"/>
+<area shape="poly" title=" " alt="" coords="436,30,477,138,472,140,431,32"/>
+<area shape="rect" title=" " alt="" coords="492,79,572,104"/>
+<area shape="poly" title=" " alt="" coords="447,28,505,68,502,73,444,33"/>
+<area shape="rect" title=" " alt="" coords="191,152,254,177"/>
+<area shape="poly" title=" " alt="" coords="286,106,246,144,243,140,282,102"/>
+<area shape="rect" title=" " alt="" coords="279,152,337,177"/>
+<area shape="poly" title=" " alt="" coords="301,104,306,138,301,139,295,105"/>
+<area shape="rect" title=" " alt="" coords="5,152,56,177"/>
+<area shape="poly" title=" " alt="" coords="251,107,70,154,69,149,249,101"/>
+<area shape="rect" title=" " alt="" coords="81,152,167,177"/>
+<area shape="poly" title=" " alt="" coords="269,106,166,149,164,144,267,102"/>
+<area shape="poly" title=" " alt="" coords="313,102,367,141,364,146,310,106"/>
+<area shape="poly" title=" " alt="" coords="327,102,441,144,440,149,325,107"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a6a1286b5d70cf45335abb5c1f604db4a" id="r_a6a1286b5d70cf45335abb5c1f604db4a"><td class="memItemLeft" align="right" valign="top">std::wstring_convert&lt; std::codecvt_utf8&lt; wchar_t &gt;, wchar_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modAlphaCipher_8cpp.html#a6a1286b5d70cf45335abb5c1f604db4a">codec</a></td></tr>
+<tr class="memdesc:a6a1286b5d70cf45335abb5c1f604db4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конвертер UTF-8.  <br /></td></tr>
+<tr class="separator:a6a1286b5d70cf45335abb5c1f604db4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Реализация класса <a class="el" href="classmodAlphaCipher.html" title="Класс для шифрования методом модифицированного алфавитного шифра">modAlphaCipher</a>. </p>
+<dl class="section author"><dt>Автор</dt><dd>Назарова Софья </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>2025 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>WECT ПГУ </dd></dl>
+</div><h2 class="groupheader">Переменные</h2>
+<a id="a6a1286b5d70cf45335abb5c1f604db4a" name="a6a1286b5d70cf45335abb5c1f604db4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a1286b5d70cf45335abb5c1f604db4a">&#9670;&#160;</a></span>codec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::wstring_convert&lt;std::codecvt_utf8&lt;wchar_t&gt;, wchar_t&gt; codec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конвертер UTF-8. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
